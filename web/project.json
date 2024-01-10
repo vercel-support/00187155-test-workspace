@@ -1,0 +1,55 @@
+{
+  "name": "web",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "web",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/remix:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/web"
+      }
+    },
+    "serve": {
+      "executor": "@nx/remix:serve",
+      "options": {
+        "command": "pnpm exec remix-serve build/index.js",
+        "manual": true,
+        "port": 4200
+      }
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "command": "remix-serve build/index.js",
+      "options": {
+        "cwd": "web"
+      }
+    },
+    "typecheck": {
+      "command": "tsc",
+      "options": {
+        "cwd": "web"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../coverage/web"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "web:build",
+        "port": 4200
+      }
+    }
+  }
+}

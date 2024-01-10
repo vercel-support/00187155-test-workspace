@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node';
+
 import {
   Links,
   LiveReload,
@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import {MetaFunction} from '@vercel/remix'
 
 export const meta: MetaFunction = () => [
   {

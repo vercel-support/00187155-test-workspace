@@ -17,6 +17,9 @@ dependencies:
   '@remix-run/serve':
     specifier: ^2.3.0
     version: 2.4.1(typescript@5.3.3)
+  '@vercel/remix':
+    specifier: ^2.4.1
+    version: 2.4.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
   isbot:
     specifier: ^3.6.8
     version: 3.8.0
@@ -4119,6 +4122,22 @@ packages:
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
     dev: true
+
+  /@vercel/remix@2.4.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-Wq3WlaHQmqjWyzEuf8iJENajhTd6GMOqwa9Os7BcfA2HgyJkKWhslsewkj1wrPmKfxLvR0GTxH9RFfRvz0ivpg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@remix-run/node': 2.4.1(typescript@5.3.3)
+      '@remix-run/server-runtime': 2.4.1(typescript@5.3.3)
+      isbot: 3.8.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /@vitejs/plugin-react@4.2.1(vite@5.0.11):
     resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}

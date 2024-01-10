@@ -1,7 +1,7 @@
 {
   "name": "web",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "web",
+  "sourceRoot": "apps/web",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -24,13 +24,13 @@
       "dependsOn": ["build"],
       "command": "remix-serve build/index.js",
       "options": {
-        "cwd": "web"
+        "cwd": "apps/wedb"
       }
     },
     "typecheck": {
       "command": "tsc",
       "options": {
-        "cwd": "web"
+        "cwd": "apps/wedb"
       }
     },
     "test": {

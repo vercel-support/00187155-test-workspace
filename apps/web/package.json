@@ -4,8 +4,12 @@
   "description": "",
   "license": "",
   "scripts": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "@remix-run/node": "^2.3.0",
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.3.0",
+  },
   "engines": {
     "node": ">=14"
   },

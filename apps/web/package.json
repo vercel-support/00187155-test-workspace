@@ -4,10 +4,8 @@
   "description": "",
   "license": "",
   "scripts": {},
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">=14"
   },

@@ -5,10 +5,10 @@
   "license": "",
   "scripts": {},
   "dependencies": {
-    "@remix-run/node": "^2.3.0",
+    "@remix-run/node": "^2.3.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.3.0",
+    "@remix-run/dev": "^2.3.0"
   },
   "engines": {
     "node": ">=14"
